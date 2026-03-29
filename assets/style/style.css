@@ -1,4 +1,6 @@
+    
     /* ── Reset & Base ──────────────────────────────────── */
+    
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -18,7 +20,7 @@
 
     body {
       font-family: 'Outfit', sans-serif;
-      background:#0F127A;
+      background: var(--cream);
       color: var(--ink);
       line-height: 1.6;
       overflow-x: hidden;
@@ -105,9 +107,11 @@
       justify-content: space-between;
       height: 68px;
     }
-
+  
     .nav-logo {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: "Livvic", sans-serif;
+      font-weight: 400;
+      font-style: normal;
       font-size: 1.4rem;
       font-weight: 600;
       letter-spacing: -0.02em;
@@ -131,6 +135,7 @@
       align-items: center;
       gap: 36px;
       list-style: none;
+      margin-bottom: 0;
     }
 
     .nav-links a {
@@ -183,7 +188,6 @@
     .hero h2 {
       font-size: clamp(2.8rem, 5.5vw, 5.2rem);
       color: var(--sage);
-      font-style: italic;
       max-width: 820px;
       margin: 0 auto 28px;
     }
@@ -304,9 +308,9 @@
     /* ── Values ───────────────────────────────────────── */
     .values {
       background-image: url(../images/Background.png);
-      background-size: 105%;
+      background-size: 120%;
       background-repeat: no-repeat;
-      padding: 100px 0;
+      padding: 50px 0;
       position: relative;
       overflow: hidden;
     }
